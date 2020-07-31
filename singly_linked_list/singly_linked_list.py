@@ -37,7 +37,7 @@ class LinkedList:
     def remove_head(self):
        #if list is empty return none
        if not self.head:
-           return None 
+           return None
        #if list has only one element
        if self.head.next_node is None:
            head_value = self.head.value
@@ -47,7 +47,7 @@ class LinkedList:
        else:
            head_value = self.head.value
            # head will point the node next to the current node
-           self.head = self.head.next_node 
+           self.head = self.head.next_node
            return head_value
     def contains(self, value):
         if self.head is None:
